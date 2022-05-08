@@ -28,7 +28,7 @@ class PeopleTable extends React.Component {
                     firstName: '',
                     lastName: '',
                     age: '',
-                    checked: false
+                 
                 },
                 editMe: false,
 
