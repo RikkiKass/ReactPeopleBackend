@@ -7,7 +7,6 @@ class PeopleTable extends React.Component {
         people: [],
         checkedPeople: [],
         person: {
-            id: '',
             firstName: '',
             lastName: '',
             age: '',
@@ -61,8 +60,7 @@ class PeopleTable extends React.Component {
         });
     }
     onEditClick = (person) => {
-        const copy = { ...this.state.person, firstName: person.firstName, lastName: person.lastName, age: person.age };
-        this.setState({ person: copy, editMe: true });
+        this.setState({ person: person, editMe: true });
     }
     checkAll = () => {
         const copy = [...this.state.people];
